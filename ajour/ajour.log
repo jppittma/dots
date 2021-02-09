@@ -1,0 +1,83 @@
+16:11:23.429 [ajour][INFO] Ajour 0.6.1 has started.
+16:11:23.430 [ajour::gui][DEBUG] config loaded:
+Config {
+    wow: Wow {
+        directory: Some(
+            "/Applications/World of Warcraft",
+        ),
+        flavor: Retail,
+    },
+    addons: Addons {
+        global_release_channel: Stable,
+        ignored: {},
+        release_channels: {},
+        delete_saved_variables: false,
+    },
+    theme: None,
+    column_config: V1 {
+        local_version_width: 150,
+        remote_version_width: 150,
+        status_width: 85,
+    },
+    window_size: None,
+    scale: None,
+    backup_directory: None,
+    backup_addons: false,
+    backup_wtf: false,
+    hide_ignored_addons: false,
+    self_update_channel: Stable,
+    weak_auras_account: {},
+    alternating_row_colors: true,
+}
+16:11:23.430 [ajour::gui][DEBUG] antialiasing: true
+16:11:23.482 [ajour_core::utility][DEBUG] checking for application update
+16:11:23.482 [ajour_core::theme][DEBUG] loading user themes
+16:11:23.483 [ajour_core::fs::theme][DEBUG] loaded 0 user themes
+16:11:23.549 [ajour::gui::update][DEBUG] Message::ThemesLoaded(0 themes)
+16:11:23.549 [ajour::gui::update][DEBUG] Message::CachesLoaded(error: false)
+16:11:23.555 [ajour::gui::update][DEBUG] Message::Parse
+16:11:23.556 [ajour::gui::update][DEBUG] preparing to parse addons in "/Applications/World of Warcraft/_retail_/Interface/AddOns"
+16:11:23.556 [ajour::gui::update][DEBUG] preparing to parse addons in "/Applications/World of Warcraft/_ptr_/Interface/AddOns"
+16:11:23.556 [ajour::gui::update][DEBUG] preparing to parse addons in "/Applications/World of Warcraft/_beta_/Interface/AddOns"
+16:11:23.556 [ajour::gui::update][DEBUG] preparing to parse addons in "/Applications/World of Warcraft/_classic_/Interface/AddOns"
+16:11:23.556 [ajour::gui::update][DEBUG] preparing to parse addons in "/Applications/World of Warcraft/_classic_ptr_/Interface/AddOns"
+16:11:23.556 [ajour_core::parse][DEBUG] Retail - parsing addons folder
+16:11:23.556 [ajour_core::parse][DEBUG] Retail PTR - parsing addons folder
+16:11:23.556 [ajour_core::parse][DEBUG] Retail - 50 folders in AddOns directory to parse
+16:11:23.556 [ajour_core::parse][DEBUG] Retail Beta - parsing addons folder
+16:11:23.556 [ajour_core::parse][DEBUG] Classic - parsing addons folder
+16:11:23.556 [ajour_core::parse][DEBUG] Classic PTR - parsing addons folder
+16:11:23.557 [ajour_core::parse][DEBUG] Retail - 50 fingerprints: 50 cached, 0 calculated, 0 added, 0 removed
+16:11:23.560 [ajour_core::parse][DEBUG] Retail - 50 addon folders successfully parsed from '.toc'
+16:11:23.560 [ajour_core::parse][DEBUG] Retail - 1 valid cache entries retrieved
+16:11:23.560 [ajour_core::parse][DEBUG] Retail - 48 unique fingerprints to check against curse api
+16:11:23.562 [ajour::gui::update][DEBUG] Message::CheckWeakAurasInstalled(Retail, is_installed: true)
+16:11:23.562 [ajour::gui::update][DEBUG] Message::CheckWeakAurasInstalled(Retail PTR, is_installed: false)
+16:11:23.563 [ajour::gui::update][DEBUG] Message::CheckWeakAurasInstalled(Retail Beta, is_installed: false)
+16:11:23.563 [ajour::gui::update][DEBUG] Message::CheckWeakAurasInstalled(Classic, is_installed: false)
+16:11:23.563 [ajour::gui::update][DEBUG] Message::CheckWeakAurasInstalled(Classic PTR, is_installed: false)
+16:11:23.563 [ajour][ERROR] Failed to parse addons
+16:11:23.563 [ajour][ERROR] caused by: Addon directory not found: "/Applications/World of Warcraft/_ptr_/Interface/AddOns"
+16:11:23.563 [ajour][ERROR] Failed to parse addons
+16:11:23.563 [ajour][ERROR] caused by: Addon directory not found: "/Applications/World of Warcraft/_beta_/Interface/AddOns"
+16:11:23.563 [ajour][ERROR] Failed to parse addons
+16:11:23.563 [ajour][ERROR] caused by: Addon directory not found: "/Applications/World of Warcraft/_classic_/Interface/AddOns"
+16:11:23.563 [ajour][ERROR] Failed to parse addons
+16:11:23.563 [ajour][ERROR] caused by: Addon directory not found: "/Applications/World of Warcraft/_classic_ptr_/Interface/AddOns"
+16:11:23.564 [ajour::gui::update][DEBUG] Message::ListWeakAurasAccounts(Retail, num_accounts: 2)
+16:11:23.775 [ajour::gui::update][DEBUG] Message::LatestRelease(Some("0.6.1"))
+16:11:23.916 [ajour_core::catalog][DEBUG] Successfully fetched and parsed https://github.com/casperstorm/ajour-catalog/releases/latest/download/tukui.json
+16:11:24.608 [ajour_core::catalog][DEBUG] Successfully fetched and parsed https://github.com/casperstorm/ajour-catalog/releases/latest/download/wowi.json
+16:11:25.111 [ajour_core::catalog][DEBUG] Successfully fetched and parsed https://github.com/casperstorm/ajour-catalog/releases/latest/download/curse.json
+16:11:25.170 [ajour::gui::update][DEBUG] Message::CatalogDownloaded(15767 addons in catalog)
+16:11:25.730 [ajour_core::parse][DEBUG] Retail - 8 curse packages fetched
+16:11:25.803 [ajour_core::parse][DEBUG] Retail - 1 tukui packages fetched
+16:11:26.053 [ajour_core::parse][DEBUG] Retail - 3 wowi packages fetched
+16:11:26.053 [ajour_core::parse][DEBUG] Retail - 0 git packages fetched
+16:11:26.053 [ajour_core::parse][DEBUG] Retail - 8 addons built from curse packages
+16:11:26.053 [ajour_core::parse][DEBUG] Retail - 1 addons built from tukui packages
+16:11:26.053 [ajour_core::parse][DEBUG] Retail - 0 addons built from wowi packages
+16:11:26.053 [ajour_core::parse][DEBUG] Retail - 0 addons built from git packages
+16:11:26.053 [ajour_core::parse][DEBUG] Retail - 0 unknown addon folders
+16:11:26.053 [ajour_core::parse][DEBUG] Retail - 9 addons successfully parsed
+16:11:26.058 [ajour::gui::update][DEBUG] Message::ParsedAddons(Retail, 9 addons)
